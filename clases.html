@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases - Gimnasio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/clasesStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>Nuestras Clases</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="clases.html">Clases</a></li>
+                <li><a href="entrenadores.html">Entrenadores</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sistema de Filtrado -->
+    <section class="filtros">
+        <input type="radio" id="todos" name="categoria" checked>
+        <label for="todos">Todos</label>
+
+        <input type="radio" id="musculacion" name="categoria">
+        <label for="musculacion">Musculación</label>
+
+        <input type="radio" id="crossfit" name="categoria">
+        <label for="crossfit">CrossFit</label>
+
+        <input type="radio" id="yoga" name="categoria">
+        <label for="yoga">Yoga</label>
+
+        <input type="radio" id="spinning" name="categoria">
+        <label for="spinning">Spinning</label>
+    </section>
+
+    <!-- Galeria Masonry -->
+    <section class="galeria">
+        <div class="clase musculacion">
+            <img src="resources/images/Musculacion.jpeg" alt="Musculación">
+            <div class="overlay">Musculación</div>
+        </div>
+
+        <div class="clase crossfit">
+            <img src="resources/images/Crossfit.jpeg" alt="CrossFit">
+            <div class="overlay">CrossFit</div>
+        </div>
+
+        <div class="clase yoga">
+            <img src="resources/images/Yoga.jpeg" alt="Yoga">
+            <div class="overlay">Yoga</div>
+        </div>
+
+        <div class="clase spinning">
+            <img src="resources/images/Spinning.jpeg" alt="Spinning">
+            <div class="overlay">Spinning</div>
+        </div>
+    </section>
+
+    <!-- Tabla de Horarios -->
+    <section class="tabla-horarios">
+        <h2>Horarios Semanales</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Musculación</th>
+                    <th>CrossFit</th>
+                    <th>Yoga</th>
+                    <th>Spinning</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Dia">Lunes</td>
+                    <td data-label="Musculacion">07:00hs a 23:00hs</td>
+                    <td data-label="CrossFit">10:00hs a 12:00hs<br>18:00hs a 20:00hs</td>
+                    <td data-label="Yoga">09:00hs a 10:00hs<br>16:00hs a 17:00hs</td>
+                    <td data-label="Spinning">11:00hs a 13:00hs<br>20:00hs a 22:00hs </td>
+                </tr>
+                <tr>
+                    <td data-label="Dia">Martes</td>
+                    <td data-label="Musculacion">07:00hs a 23:00hs</td>
+                    <td data-label="CrossFit">08:00hs a 10:00hs<br>16:00hs a 18:00hs</td>
+                    <td data-label="Yoga">09:00hs a 10:00hs<br>20:00hs a 21:00hs</td>
+                    <td data-label="Spinning">10:00hs a 12:00hs<br>20:00hs a 22:00hs </td>
+                </tr>
+                <tr>
+                    <td data-label="Dia">Miércoles</td>
+                    <td data-label="Musculacion">07:00hs a 23:00hs</td>
+                    <td data-label="CrossFit">10:00hs a 12:00hs<br>18:00hs a 20:00hs</td>
+                    <td data-label="Yoga">09:00hs a 10:00hs<br>16:00hs a 17:00hs</td>
+                    <td data-label="Spinning">11:00hs a 13:00hs<br>20:00hs a 22:00hs </td>
+                </tr>
+                <tr>
+                    <td data-label="Dia">Jueves</td>
+                    <td data-label="Musculacion">07:00hs a 23:00hs</td>
+                    <td data-label="CrossFit">08:00hs a 10:00hs<br>16:00hs a 18:00hs</td>
+                    <td data-label="Yoga">09:00hs a 10:00hs<br>20:00hs a 21:00hs</td>
+                    <td data-label="Spinning">10:00hs a 12:00hs<br>20:00hs a 22:00hs </td>
+                </tr>
+                <tr>
+                    <td data-label="Dia">Viernes</td>
+                    <td data-label="Musculacion">07:00hs a 23:00hs</td>
+                    <td data-label="CrossFit">10:00hs a 12:00hs<br>18:00hs a 20:00hs</td>
+                    <td data-label="Yoga">09:00hs a 10:00hs<br>16:00hs a 17:00hs</td>
+                    <td data-label="Spinning">11:00hs a 13:00hs<br>20:00hs a 22:00hs </td>
+                </tr>
+                <tr>
+                    <td data-label="Dia">Sábado</td>
+                    <td data-label="Musculacion">07:00hs a 23:00hs</td>
+                    <td data-label="CrossFit">08:00hs a 10:00hs<br>16:00hs a 18:00hs</td>
+                    <td data-label="Yoga">09:00hs a 10:00hs<br>20:00hs a 21:00hs</td>
+                    <td data-label="Spinning">10:00hs a 12:00hs<br>20:00hs a 22:00hs </td>
+                </tr>
+                <tr>
+            </tbody>
+        </table>
+    </section>
+
+   <footer class="footer">
+    <div class="footer-content">
+      <form class="newsletter">
+        <label for="email">Suscribite al newsletter</label>
+        <input type="email" id="email" placeholder="Tu correo">
+        <button type="submit">Suscribirse</button>
+      </form>  
+      <div class="mapa">
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-58.38,-34.61,-58.37,-34.60&layer=mapnik" 
+                width="100%" 
+                height="150" 
+                frameborder="0" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+        </iframe>
+      </div>
+      <div class="social-links">
+        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2025 Popepo GYM. Todos los derechos reservados.</p>
+  </footer>
+    
+    <script src="js/claseFiltro.js"></script>
+</body>
+</html>
