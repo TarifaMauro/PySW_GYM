@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popepo GYM </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Encabezado con menu -->
+    <header>
+        <h1>Popepo GYM</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="clases.html">Clases</a></li>
+                <li><a href="entrenadores.html">Entrenadores</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seccion Hero con video -->
+    <section class="hero">
+        <video autoplay muted loop>
+            <source src="resources/videos/Video.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+        <div class="overlay">
+            <h2>¡Supera tus límites!</h2>
+            <p>Únete a nuestra comunidad fitness y alcanza tus metas.</p>
+            <a href="precios.html" class="btn">Ver Planes</a>
+        </div>
+    </section>
+
+    <!-- Seccion de Clases Destacadas -->
+    <div class="separador"></div>
+    <section class="clases-destacadas">
+        <h2>Nuestras Clases</h2>
+        <div class="clases-container">
+            <div class="clase">
+                <img src="resources/images/Musculacion.jpeg" alt="CrossFit">
+                <h3>Musculacion</h3>
+            </div>
+            <div class="clase">
+                <img src="resources/images/Crossfit.jpeg" alt="CrossFit">
+                <h3>CrossFit</h3>
+            </div>
+            <div class="clase">
+                <img src="resources/images/Yoga.jpeg" alt="Yoga">
+                <h3>Yoga</h3>
+            </div>
+            <div class="clase">
+                <img src="resources/images/Spinning.jpeg" alt="Yoga">
+                <h3>Spinning</h3>
+            </div>
+        </div>
+    </section>
+
+    <div class="separador"></div>
+
+    <section class="contador-section">
+        <h2 class="contador-titulo">Nuestra Comunidad</h2>
+        <p class="contador-descripcion">Estamos orgullosos de contar con:</p>
+        <div class="contador-box">
+          <span class="contador" data-target="500">0</span>+
+          <p>Socios Satisfechos</p>
+        </div>
+      </section>
+      
+
+    <!-- Testimonios -->
+    <div class="separador"></div>
+    <section class="testimonios">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="carrusel">
+          <div class="slide">
+            <p>"¡El mejor gimnasio de la ciudad! Entrenadores geniales y gran ambiente."</p>
+            <span>- Martina, cliente Premium</span>
+          </div>
+          <div class="slide">
+            <p>"Las clases de spinning me cambiaron la vida, ¡súper recomendadas!"</p>
+            <span>- Lucas, cliente Full</span>
+          </div>
+          <div class="slide">
+            <p>"Atención personalizada y máquinas impecables. ¡Volvería sin dudar!"</p>
+            <span>- Florencia, cliente Estándar</span>
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer-content">
+          <form class="newsletter">
+            <label for="email">Suscribite al newsletter</label>
+            <input type="email" id="email" placeholder="Tu correo">
+            <button type="submit">Suscribirse</button>
+          </form>  
+          <div class="mapa">
+            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-58.38,-34.61,-58.37,-34.60&layer=mapnik" 
+                    width="100%" 
+                    height="150" 
+                    frameborder="0" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+            </iframe>
+          </div>
+          <div class="social-links">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <p class="copyright">&copy; 2025 Popepo GYM. Todos los derechos reservados.</p>
+      </footer>
+            
+    <script src="js/contador.js"></script>
+</body>
+</html>

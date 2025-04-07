@@ -1,0 +1,330 @@
+* {
+    margin: revert-layer;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: white;
+}
+
+/* --- ENCABEZADO - (HEADER) --- */
+header h1 {
+    font-size: 33px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffcc00;
+    text-shadow: 0px 0px 15px rgba(255, 204, 0, 0.7);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 20px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background: rgba(255, 204, 0, 0.2);
+    color: #ffcc00;
+    box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.6);
+}
+
+
+/* --- SECCION HERO --- */
+.hero {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.hero video {
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #ffcc00;
+    text-shadow: 3px 3px 10px rgba(255, 204, 0, 0.8);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #e6b800;
+}
+
+/* --- SECCION CLASES DESTACADAS --- */
+.clases-destacadas {
+    text-align: center;
+    padding: 50px;
+    background-color: #111;
+}
+
+.clases-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.clase {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    color: white;
+}
+
+.clase img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.clase:hover {
+    transform: scale(1.1);
+}
+
+/* --- SECCION CONTADOR --- */
+
+.contador-titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+    margin-bottom: 0.5rem;
+}
+
+.contador-descripcion {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+.contador-section {
+    background: linear-gradient(135deg, #111, #222);;
+    color: #f1c40f;
+    text-align: center;
+    padding: 3rem 1rem;
+    font-family: 'Arial', sans-serif;
+    border: 2px solid #f1c40f;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(241, 196, 15, 0.3);
+  }
+  
+  .contador-box {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+    margin: 1rem;
+    padding: 1rem;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(241, 196, 15, 0.5);
+    color: #f1c40f;
+  }
+  
+  .contador-box p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: #fff;
+  }
+  
+  
+
+/* --- SECCION TESTIMONIOS --- */
+.testimonios {
+    background-color: #111;
+    color: #f0c14b;
+    padding: 3rem 1rem;
+    text-align: center;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+  }
+  
+  .testimonios h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+  }
+  
+  .carrusel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    height: 150px;
+    overflow: hidden;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    padding: 1rem;
+  }
+  
+  .slide {
+    position: absolute;
+    opacity: 0;
+    animation: slideFade 15s infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    transition: opacity 0.5s ease-in-out;
+    color: #fff
+  }
+  
+  .slide:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .slide:nth-child(2) {
+    animation-delay: 5s;
+  }
+  .slide:nth-child(3) {
+    animation-delay: 10s;
+  }
+  
+  .slide p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #ffd700;
+  }
+  
+  .slide span {
+    font-size: 1rem;
+    color: #ccc;
+    font-style: italic
+  }
+  
+  @keyframes slideFade {
+    0% {
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 1;
+    }
+    35% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+
+/* --- FOOTER --- */
+.footer {
+    background-color: #1a1a1a;
+    color: #f0c040;
+    padding: 20px 15px;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .footer .newsletter input[type="email"] {
+    padding: 8px;
+    width: 60%;
+    max-width: 300px;
+    border: 1px solid #f0c040;
+    background-color: transparent;
+    color: #fff;
+  }
+  
+  .footer .newsletter button {
+    padding: 8px 12px;
+    background-color: #f0c040;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .footer .social-links a {
+    color: #f0c040;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .footer .social-links a:hover {
+    color: #fff;
+  }
+  
+  .footer .mapa iframe {
+    border-radius: 5px;
+    width: 100%;
+    height: 150px;
+  }
+  
+  .footer p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+
+  .separador {
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(to right, #ffd700, transparent, #ffd700);
+    margin: 2rem auto;
+    border-radius: 5px;
+}
