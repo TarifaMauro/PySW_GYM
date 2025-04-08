@@ -1,0 +1,85 @@
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    background: #111;
+    color: #fff;
+}
+
+/* Estilo de los artículos */
+.blog-post {
+    background: #222;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: none;
+}
+
+.blog-post.active {
+    display: block;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+/* Títulos de los artículos */
+.blog-post h2 {
+    font-size: 1.5rem;
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+/* Tags */
+.blog-post .tags {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.blog-post .tags span {
+    background: #ffd700;
+    color: #111;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+}
+
+
+.blog-post p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+/* Sistema de filtrado */
+.filter {
+    text-align: center;
+    margin: 15px auto 2rem auto; /* Añade un margen superior para separar del encabezado */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.filter input[type="radio"] {
+    display: none;
+}
+
+.filter label {
+    background: #222;
+    color: #ffd700;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.filter input[type="radio"]:checked + label {
+    background: #ffd700;
+    color: #111;
+}

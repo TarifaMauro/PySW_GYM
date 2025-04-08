@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Fitness</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Estilos generales -->
+    <link rel="stylesheet" href="css/blogStyles.css"> <!-- Estilos del blog -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">    
+</head>
+<body>
+    <header>
+        <h1>Blog de Fitness</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="clases.html">Clases</a></li>
+                <li><a href="entrenadores.html">Entrenadores</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sistema de Filtrado -->
+    <div class="filter">
+        <input type="radio" name="filter" id="all" checked>
+        <label for="all">Todos</label>
+
+        <input type="radio" name="filter" id="yoga">
+        <label for="yoga">Yoga</label>
+
+        <input type="radio" name="filter" id="crossfit">
+        <label for="crossfit">CrossFit</label>
+
+        <input type="radio" name="filter" id="nutricion">
+        <label for="nutricion">Nutrición</label>
+    </div>
+
+    <main class="blog-container">
+        <!-- Artículo 1 -->
+        <article class="blog-post yoga">
+            <h2>5 Beneficios del Yoga para tu Salud</h2>
+            <p class="tags">Tags: <span>Yoga</span>, <span>Salud</span></p>
+            <p>El yoga no solo mejora tu flexibilidad, sino que también reduce el estrés y mejora tu bienestar general...</p>
+        </article>
+        
+        <!-- Artículo 2 -->
+        <article class="blog-post crossfit">
+            <h2>Cómo empezar con el CrossFit</h2>
+            <p class="tags">Tags: <span>CrossFit</span>, <span>Entrenamiento</span></p>
+            <p>El CrossFit es una disciplina desafiante pero gratificante. Aquí te damos algunos consejos para empezar...</p>
+        </article>
+
+        <!-- Artículo 3 -->
+        <article class="blog-post nutricion">
+            <h2>Alimentación para un Mejor Rendimiento</h2>
+            <p class="tags">Tags: <span>Nutrición</span>, <span>Fitness</span></p>
+            <p>Descubre cómo una dieta balanceada puede mejorar tu rendimiento físico y ayudarte a alcanzar tus metas...</p>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+          <form class="newsletter">
+            <label for="email">Suscribite al newsletter</label>
+            <input type="email" id="email" placeholder="Tu correo">
+            <button type="submit">Suscribirse</button>
+          </form>  
+          <div class="mapa">
+            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-58.38,-34.61,-58.37,-34.60&layer=mapnik" 
+                    width="100%" 
+                    height="150" 
+                    frameborder="0" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+            </iframe>
+          </div>
+          <div class="social-links">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <p class="copyright">&copy; 2025 Popepo GYM. Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/blogFiltro.js"></script>
+</body>
+</html>
