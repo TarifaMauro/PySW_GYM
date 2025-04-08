@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Planes - PopeposGYM</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/preciosStyles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+
+
+    <header>
+        <h1>PRECIOS</h1>
+        <nav class="nav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="clases.html">Clases</a></li>
+            <li><a href="entrenadores.html">Entrenadores</a></li>
+            <li><a href="precios.html" class="active">Precios</a></li>
+            <li><a href="blog.html">Blog</a></li>       
+            <li><a href="contacto.html">Contacto</a></li>
+        
+        </ul>
+        </nav>
+    </header>
+
+    <!-- SECCIÓN PLANES -->
+    <section class="seccion-planes">
+
+        <!-- Botones de selección -->
+        <input type="radio" name="plan" id="mensual" checked />
+        <label for="mensual">Mensual</label>
+    
+        <input type="radio" name="plan" id="anual" />
+        <label for="anual">Anual</label>
+  
+        <!-- Tabla de planes -->
+        <div class="tabla-planes">
+        <div class="plan-card">
+            <h3>Plan Básico</h3>
+            <p class="precio mensual">$18.000</p>
+            <p class="precio anual">$190.000</p>
+            <ul>
+            <li>Acceso gimnasio <span class="tooltip">ⓘ<span class="tooltip-text">Acceso ilimitado al gimnasio</span></span></li>
+            <li>1 clase grupal semanal</li>
+            <li>Sin asesoramiento personalizado</li>
+            </ul>
+        </div>
+    
+        <div class="plan-card destacado">
+            <h3>Plan Full</h3>
+            <p class="precio mensual">$28.000</p>
+            <p class="precio anual">$300.000</p>
+            <ul>
+            <li>Acceso completo <span class="tooltip">ⓘ<span class="tooltip-text">Incluye zona de pesas, cardio y más</span></span></li>
+            <li>Clases ilimitadas</li>
+            <li>Asesoramiento personalizado</li>
+            </ul>
+        </div>
+    
+        <div class="plan-card">
+            <h3>Plan Premium</h3>
+            <p class="precio mensual">$35.000</p>
+            <p class="precio anual">$370.000</p>
+            <ul>
+            <li>Todo incluido <span class="tooltip">ⓘ<span class="tooltip-text">Acceso total + nutrición + evaluación física</span></span></li>
+            <li>Plan nutricional</li>
+            <li>Evaluación mensual</li>
+            </ul>
+        </div>
+        </div>
+  
+    </section>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+        <form class="newsletter">
+            <label for="email">Suscribite al newsletter</label>
+            <input type="email" id="email" placeholder="Tu correo">
+            <button type="submit">Suscribirse</button>
+        </form>  
+        <div class="mapa">
+            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-58.38,-34.61,-58.37,-34.60&layer=mapnik" 
+                    width="100%" 
+                    height="150" 
+                    frameborder="0" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+            </iframe>
+        </div>
+        <div class="social-links">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        </div>
+        <p class="copyright">&copy; 2025 Popepo GYM. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
