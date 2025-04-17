@@ -1,24 +1,26 @@
+/* Estilos generales para la sección */
 .entrenadores {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 50px;
     background-color: #111;
+    color: #fff;
+    padding: 60px 20px;
 }
 
+/* Tarjetas */
 .card {
-    width: 250px;
-    height: 350px;
     perspective: 1000px;
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+    margin: auto;
+    border: none;
 }
 
 .card-inner {
+    position: relative;
     width: 100%;
     height: 100%;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    position: relative;
 }
 
 .card:hover .card-inner {
@@ -30,57 +32,108 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 15px;
-    overflow: hidden;
-    color: white;
     background-color: #222;
-    box-shadow: 0 0 15px rgba(255, 204, 0, 0.2);
-    padding: 20px;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .card-front img {
-    width: 100px;
-    height: 130px;
-    border-radius: 50%;
+    width: 120px;
+    height: auto;
     object-fit: cover;
-    margin-bottom: 10px;
-    border: 3px solid #ffcc00;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.card-front h5 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #FFD700;
+}
+
+/* Ajustes para los títulos en la parte trasera */
+.card-back h6 {
+    font-size: 1.2rem; /* Tamaño más grande */
+    color: #FFD700; /* Color amarillo para destacar */
+    margin-bottom: 10px; /* Espaciado inferior */
+    text-align: center;
+    text-transform: uppercase; /* Texto en mayúsculas para mayor claridad */
+}
+
+/* Ajustes para las etiquetas de habilidades */
+.card-back .habilidades p {
+    font-size: 1rem;
+    color: #FFD700; /* Color amarillo */
+    margin-bottom: 5px;
+    text-align: left; /* Alineación a la izquierda */
+}
+
+.card-front .descripcion {
+    font-size: 0.9rem;
+    color:rgb(180, 180, 180);
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Estilo para el título "Descripción" */
+.card-front .descripcion-titulo {
+    font-size: 1rem;
+    color: #FFD700; /* Color amarillo para destacar */
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase; /* Texto en mayúsculas */
+    font-weight: bold;
 }
 
 .card-back {
     transform: rotateY(180deg);
-    text-align: center;
 }
 
+/* Barras de progreso */
 .habilidades p {
-    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #FFD700;
+    margin-bottom: 5px;
 }
 
-.barra {
-    width: 100%;
-    height: 10px;
-    background: #333;
+.progress {
+    background-color: #333;
+    height: 20px;
     border-radius: 5px;
-    margin-bottom: 10px;
+    overflow: hidden;
 }
 
-.nivel {
+.progress-bar {
+    background-color: #FFD700;
     height: 100%;
-    background: #ffcc00;
-    border-radius: 5px;
-    animation: grow 1s ease-out forwards;
+    width: 0%;
+    transition: width 1s ease-in-out;
 }
 
-@keyframes grow {
-    from { width: 0; }
-}
-
+/* Estrellas */
 .estrellas {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.estrellas input {
+    display: none;
+}
+
+.estrellas label {
     font-size: 1.5rem;
-    color: #ffcc00;
-    margin-top: 10px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.estrellas input:checked ~ label,
+.estrellas label:hover,
+.estrellas label:hover ~ label {
+    color: #FFD700;
 }
