@@ -57,21 +57,21 @@
     color: #FFD700;
 }
 
-/* Ajustes para los títulos en la parte trasera */
+/* Ajustes para los títulos en la parte de atras */
 .card-back h6 {
-    font-size: 1.2rem; /* Tamaño más grande */
-    color: #FFD700; /* Color amarillo para destacar */
-    margin-bottom: 10px; /* Espaciado inferior */
+    font-size: 1.2rem;
+    color: #FFD700;
+    margin-bottom: 10px;
     text-align: center;
-    text-transform: uppercase; /* Texto en mayúsculas para mayor claridad */
+    text-transform: uppercase;
 }
 
 /* Ajustes para las etiquetas de habilidades */
 .card-back .habilidades p {
     font-size: 1rem;
-    color: #FFD700; /* Color amarillo */
+    color: #FFD700;
     margin-bottom: 5px;
-    text-align: left; /* Alineación a la izquierda */
+    text-align: left;
 }
 
 .card-front .descripcion {
@@ -84,10 +84,10 @@
 /* Estilo para el título "Descripción" */
 .card-front .descripcion-titulo {
     font-size: 1rem;
-    color: #FFD700; /* Color amarillo para destacar */
+    color: #FFD700;
     margin-top: 10px;
     text-align: center;
-    text-transform: uppercase; /* Texto en mayúsculas */
+    text-transform: uppercase;
     font-weight: bold;
 }
 
