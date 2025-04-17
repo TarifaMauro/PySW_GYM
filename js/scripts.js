@@ -25,20 +25,20 @@ $(document).ready(function () {
     });
   
     // Validación del formulario de newsletter
-    $("form").on("submit", function (e) {
+    $("#newsletter-form").on("submit", function (e) {
       e.preventDefault();
-      const email = $("#email").val();
+      const email = $("#newsletter-email").val();
       if (email.includes("@") && email.includes(".")) {
-        $("#email").removeClass("is-invalid").addClass("is-valid");
-        $("button[type='submit']").html('<span class="spinner-border spinner-border-sm"></span> Enviando...');
+        $("#newsletter-email").removeClass("is-invalid").addClass("is-valid");
+        $("#newsletter-form button[type='submit']").html('<span class="spinner-border spinner-border-sm"></span> Enviando...');
         setTimeout(() => {
-          $("button[type='submit']").html("Suscribirse");
+          $("#newsletter-form button[type='submit']").html("Suscribirse");
           alert("Formulario enviado correctamente");
-          $("#email").removeClass("is-valid");
-          $("#email").val(""); // Limpia el campo de entrada
+          $("#newsletter-email").removeClass("is-valid");
+          $("#newsletter-email").val(""); // Limpia el campo de entrada
         }, 2000);
       } else {
-        $("#email").removeClass("is-valid").addClass("is-invalid");
+        $("#newsletter-email").removeClass("is-valid").addClass("is-invalid");
         alert("Por favor, ingresa un correo válido.");
       }
     });

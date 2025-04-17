@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    // Validación en tiempo real
-    $(".contact-form input, .contact-form textarea").on("input", function () {
+    // Validación en tiempo real para el formulario de contacto
+    $("#contact-form input, #contact-form textarea").on("input", function () {
         if (this.checkValidity()) {
             $(this).removeClass("is-invalid").addClass("is-valid");
         } else {
@@ -8,8 +8,8 @@ $(document).ready(function () {
         }
     });
 
-    // Manejo del envío del formulario
-    $(".contact-form").on("submit", function (e) {
+    // Manejo del envío del formulario de contacto
+    $("#contact-form").on("submit", function (e) {
         e.preventDefault();
 
         // Mostrar spinner
@@ -24,8 +24,8 @@ $(document).ready(function () {
             $("#modalConfirmacion").modal("show");
 
             // Reiniciar el formulario
-            $(".contact-form")[0].reset();
-            $(".contact-form input, .contact-form textarea").removeClass("is-valid is-invalid");
+            $("#contact-form")[0].reset();
+            $("#contact-form input, .contact-form textarea").removeClass("is-valid is-invalid");
         }, 2000); // Simula un retraso de 2 segundos
     });
 });
