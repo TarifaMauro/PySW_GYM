@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Fitness</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"> <!-- AOS para animaciones -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blogStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Encabezado con menú -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Popepo GYM - Blog</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="clasesDropdown" role="button" aria-expanded="false">
+                                Clases
+                            </a>
+                            <ul class="dropdown-menu mega-menu" aria-labelledby="clasesDropdown">
+                                <li class="mega-menu-column">
+                                    <h6 class="mega-menu-title">Principales</h6>
+                                    <ul class="mega-menu-list">
+                                        <li><a href="clases.html">Musculación</a></li>
+                                        <li><a href="clases.html">CrossFit</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mega-menu-column">
+                                    <h6 class="mega-menu-title">Otras</h6>
+                                    <ul class="mega-menu-list">
+                                        <li><a href="clases.html">Yoga</a></li>
+                                        <li><a href="clases.html">Spinning</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="entrenadores.html">Entrenadores</a></li>
+                        <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sistema de Filtrado -->
+    <div class="filter btn-group d-flex justify-content-center my-4" role="group">
+        <button type="button" class="btn btn-warning filter-btn" data-filter="all">Todos</button>
+        <button type="button" class="btn btn-warning filter-btn" data-filter="yoga">Yoga</button>
+        <button type="button" class="btn btn-warning filter-btn" data-filter="crossfit">CrossFit</button>
+        <button type="button" class="btn btn-warning filter-btn" data-filter="nutricion">Nutrición</button>
+        <button type="button" class="btn btn-warning filter-btn" data-filter="musculacion">Musculación</button>
+    </div>
+
+    <!-- Contenedor de Artículos -->
+    <main class="blog-container">
+        <!-- Artículo 1 -->
+        <article class="blog-post yoga" data-aos="fade-up">
+            <h2>5 Beneficios del Yoga para tu Salud</h2>
+            <p class="tags">Tags: <span>Yoga</span>, <span>Salud</span></p>
+            <p>El yoga no solo mejora tu flexibilidad, sino que también reduce el estrés y mejora tu bienestar general...</p>
+            <a href="#" class="read-more">Leer más</a>
+        </article>
+
+        <!-- Artículo 2 -->
+        <article class="blog-post crossfit" data-aos="fade-up">
+            <h2>Cómo empezar con el CrossFit</h2>
+            <p class="tags">Tags: <span>CrossFit</span>, <span>Entrenamiento</span></p>
+            <p>El CrossFit es una disciplina desafiante pero gratificante. Aquí te damos algunos consejos para empezar...</p>
+            <a href="#" class="read-more">Leer más</a>
+        </article>
+
+        <!-- Artículo 3 -->
+        <article class="blog-post nutricion" data-aos="fade-up">
+            <h2>Alimentación para un Mejor Rendimiento</h2>
+            <p class="tags">Tags: <span>Nutrición</span>, <span>Fitness</span></p>
+            <p>Descubre cómo una dieta balanceada puede mejorar tu rendimiento físico y ayudarte a alcanzar tus metas...</p>
+            <a href="#" class="read-more">Leer más</a>
+        </article>
+
+        <!-- Artículo 4 -->
+        <article class="blog-post musculacion" data-aos="fade-up">
+            <h2>Consejos para Mejorar tu Rutina de Musculación</h2>
+            <p class="tags">Tags: <span>Musculación</span>, <span>Entrenamiento</span></p>
+            <p>Descubre cómo optimizar tu rutina de musculación para obtener mejores resultados y evitar lesiones...</p>
+            <a href="#" class="read-more">Leer más</a>
+        </article>
+    </main>
+    
+    <!-- Sección de Comentarios -->
+    <section class="comments">
+        <h2 class="text-center text-warning mb-4">Comentarios</h2>
+        <div class="comment">
+            <div class="avatar" data-initials="JP"></div>
+            <div class="content">
+                <p><strong>Juan Pérez</strong>: Excelente artículo sobre yoga, me ayudó mucho a entender sus beneficios.</p>
+                <button class="reply btn btn-warning btn-sm">Responder</button>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="avatar" data-initials="ML"></div>
+            <div class="content">
+                <p><strong>María López</strong>: Me encantó el artículo de nutrición, muy útil para mejorar mi dieta.</p>
+                <button class="reply btn btn-warning btn-sm">Responder</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <form id="newsletter-form" class="newsletter">
+                <label for="newsletter-email">Suscribite al newsletter</label>
+                <input type="email" id="newsletter-email" placeholder="Tu correo">
+                <button type="submit">Suscribirse</button>
+            </form>
+            <div class="mapa">
+                <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-58.38,-34.61,-58.37,-34.60&layer=mapnik"
+                    width="100%" height="150" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            <div class="social-links">
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <p>&copy; 2025 Popepo GYM. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="../js/megamenu.js"></script>
+    <script src="../js/scripts.js"></script>
+    <script>
+        AOS.init({
+            duration: 800, // Duración de las animaciones
+        });
+    </script>
+    <script src="../js/blogFiltro.js"></script>
+</body>
+</html>

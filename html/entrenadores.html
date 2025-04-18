@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenadores - Popepo GYM</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/entrenadoresStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Entrenadores - Popepo GYM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="clasesDropdown" role="button" aria-expanded="false">
+                    Clases
+                  </a>
+                  <ul class="dropdown-menu mega-menu" aria-labelledby="clasesDropdown">
+                    <li class="mega-menu-column">
+                      <h6 class="mega-menu-title">Principales</h6>
+                      <ul class="mega-menu-list">
+                        <li><a href="clases.html">Musculación</a></li>
+                        <li><a href="clases.html">CrossFit</a></li>
+                      </ul>
+                    </li>
+                    <li class="mega-menu-column">
+                      <h6 class="mega-menu-title">Otras</h6>
+                      <ul class="mega-menu-list">
+                        <li><a href="clases.html">Yoga</a></li>
+                        <li><a href="clases.html">Spinning</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                
+                <li class="nav-item"><a class="nav-link" href="entrenadores.html">Entrenadores</a></li>
+                <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+    <!-- Sección de Entrenadores -->
+    <section class="entrenadores">
+        <div class="container">
+            <h2 class="text-center mb-5 text-warning">Nuestro Equipo de Entrenadores</h2>
+            <div class="row justify-content-center">
+                <!-- Tarjeta de Entrenador: Juan Pérez -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h5 class="mt-3">Juan Pérez</h5>
+                                <img src="../resources/images/entrenador1.jpeg" alt="Juan Pérez" class="img-fluid rounded-circle">
+                                <h6 class="descripcion-titulo">Descripción</h6>
+                                <p class="descripcion">Especialista en fuerza y entrenamiento funcional</p>
+                            </div>
+                            <div class="card-back">
+                                <h6>Progreso</h6>
+                                <div class="habilidades">
+                                    <p>Fuerza</p>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar bg-warning" data-value="85" style="width: 0%;"></div>
+                                    </div>
+                                    <p>Resistencia</p>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar bg-warning" data-value="70" style="width: 0%;"></div>
+                                    </div>
+                                </div>
+                                <h6>Calificación</h6>
+                                <div class="estrellas">
+                                    <input type="radio" id="estrella5-j" name="rating-j" value="5">
+                                    <label for="estrella5-j">&#9733;</label>
+                                    <input type="radio" id="estrella4-j" name="rating-j" value="4">
+                                    <label for="estrella4-j">&#9733;</label>
+                                    <input type="radio" id="estrella3-j" name="rating-j" value="3">
+                                    <label for="estrella3-j">&#9733;</label>
+                                    <input type="radio" id="estrella2-j" name="rating-j" value="2">
+                                    <label for="estrella2-j">&#9733;</label>
+                                    <input type="radio" id="estrella1-j" name="rating-j" value="1">
+                                    <label for="estrella1-j">&#9733;</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de Entrenador: CrossFit -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h5 class="mt-3">Carlos Gómez</h5>
+                                <img src="../resources/images/entrenadorCrossfit.jpeg" alt="Carlos Gómez" class="img-fluid rounded-circle">
+                                <h6 class="descripcion-titulo">Descripción</h6>
+                                <p class="descripcion">Especialista en CrossFit y entrenamiento de alta intensidad</p>
+                            </div>
+                            <div class="card-back">
+                                <h6>Progreso</h6>
+                                <div class="habilidades">
+                                    <p>Fuerza</p>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar bg-warning" data-value="80" style="width: 0%;"></div>
+                                    </div>
+                                    <p>Resistencia</p>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar bg-warning" data-value="90" style="width: 0%;"></div>
+                                    </div>
+                                </div>
+                                <h6>Calificación</h6>
+                                <div class="estrellas">
+                                    <input type="radio" id="estrella5-c" name="rating-c" value="5">
+                                    <label for="estrella5-c">&#9733;</label>
+                                    <input type="radio" id="estrella4-c" name="rating-c" value="4">
+                                    <label for="estrella4-c">&#9733;</label>
+                                    <input type="radio" id="estrella3-c" name="rating-c" value="3">
+                                    <label for="estrella3-c">&#9733;</label>
+                                    <input type="radio" id="estrella2-c" name="rating-c" value="2">
+                                    <label for="estrella2-c">&#9733;</label>
+                                    <input type="radio" id="estrella1-c" name="rating-c" value="1">
+                                    <label for="estrella1-c">&#9733;</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de Entrenadora: Spinning -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h5 class="mt-3">Ana López</h5>
+                                <img src="../resources/images/entrenadoraSpinning.jpeg" alt="Ana López" class="img-fluid rounded-circle">
+                                <h6 class="descripcion-titulo">Descripción</h6>
+                                <p class="descripcion">Especialista en Spinning y entrenamiento cardiovascular</p>
+                            </div>
+                            <div class="card-back">
+                                <h6>Progreso</h6>
+                                <div class="habilidades">
+                                    <p>Resistencia</p>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar bg-warning" data-value="95" style="width: 0%;"></div>
+                                    </div>
+                                    <p>Velocidad</p>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar bg-warning" data-value="85" style="width: 0%;"></div>
+                                    </div>
+                                </div>
+                                <h6>Calificación</h6>
+                                <div class="estrellas">
+                                    <input type="radio" id="estrella5-a" name="rating-a" value="5">
+                                    <label for="estrella5-a">&#9733;</label>
+                                    <input type="radio" id="estrella4-a" name="rating-a" value="4">
+                                    <label for="estrella4-a">&#9733;</label>
+                                    <input type="radio" id="estrella3-a" name="rating-a" value="3">
+                                    <label for="estrella3-a">&#9733;</label>
+                                    <input type="radio" id="estrella2-a" name="rating-a" value="2">
+                                    <label for="estrella2-a">&#9733;</label>
+                                    <input type="radio" id="estrella1-a" name="rating-a" value="1">
+                                    <label for="estrella1-a">&#9733;</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de Entrenadora: Yoga -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h5 class="mt-3">María Fernández</h5>
+                                <img src="../resources/images/profesoraYoga.jpeg" alt="María Fernández" class="img-fluid rounded-circle">
+                                <h6 class="descripcion-titulo">Descripción</h6>
+                                <p class="descripcion">Especialista en Yoga y bienestar integral</p>
+                            </div>
+                            <div class="card-back">
+                                <h6>Progreso</h6>
+                                <div class="habilidades">
+                                    <p>Flexibilidad</p>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar bg-warning" data-value="90" style="width: 0%;"></div>
+                                    </div>
+                                    <p>Equilibrio</p>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar bg-warning" data-value="85" style="width: 0%;"></div>
+                                    </div>
+                                </div>
+                                <h6>Calificación</h6>
+                                <div class="estrellas">
+                                    <input type="radio" id="estrella5-m" name="rating-m" value="5">
+                                    <label for="estrella5-m">&#9733;</label>
+                                    <input type="radio" id="estrella4-m" name="rating-m" value="4">
+                                    <label for="estrella4-m">&#9733;</label>
+                                    <input type="radio" id="estrella3-m" name="rating-m" value="3">
+                                    <label for="estrella3-m">&#9733;</label>
+                                    <input type="radio" id="estrella2-m" name="rating-m" value="2">
+                                    <label for="estrella2-m">&#9733;</label>
+                                    <input type="radio" id="estrella1-m" name="rating-m" value="1">
+                                    <label for="estrella1-m">&#9733;</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+          <form id="newsletter-form" class="newsletter">
+            <label for="newsletter-email">Suscribite al newsletter</label>
+            <input type="email" id="newsletter-email" placeholder="Tu correo">
+            <button type="submit">Suscribirse</button>
+          </form>
+          <div class="mapa">
+            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-58.38,-34.61,-58.37,-34.60&layer=mapnik"
+              width="100%" height="150" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+          <div class="social-links">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <p>&copy; 2025 Popepo GYM. Todos los derechos reservados.</p>
+      </footer>
+
+    <!-- Scripts -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/megamenu.js"></script>
+    <script src="../js/scripts.js"></script>
+    <script src="../js/entrenadores.js"></script>
+</body>
+</html>

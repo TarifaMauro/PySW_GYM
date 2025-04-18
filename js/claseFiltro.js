@@ -1,15 +1,16 @@
-const filters = document.querySelectorAll('.filtros input[type="radio"]');
-const classes = document.querySelectorAll('.galeria .clase');
+$(document).ready(function () {
+    const filters = $(".filtros input[type='radio']");
+    const classes = $(".galeria .clase");
 
-filters.forEach(filter => {
-    filter.addEventListener('change', () => {
-        const category = filter.id;
+    filters.on("change", function () {
+        const category = $(this).attr("id");
 
-        classes.forEach(clase => {
-            if (category === 'todos' || clase.classList.contains(category)) {
-                clase.style.display = 'block';
+        classes.each(function () {
+            const $clase = $(this);
+            if (category === "todos" || $clase.hasClass(category)) {
+                $clase.fadeIn(300).removeClass("hidden");
             } else {
-                clase.style.display = 'none';
+                $clase.fadeOut(300).addClass("hidden");
             }
         });
     });

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes - Popepo GYM</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/preciosStyles.css">
+</head>
+<body>
+    <!-- Encabezado con menú -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Popepo GYM - Precios</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="clasesDropdown" role="button" aria-expanded="false">
+                                Clases
+                            </a>
+                            <ul class="dropdown-menu mega-menu" aria-labelledby="clasesDropdown">
+                                <li class="mega-menu-column">
+                                    <h6 class="mega-menu-title">Principales</h6>
+                                    <ul class="mega-menu-list">
+                                        <li><a href="clases.html">Musculación</a></li>
+                                        <li><a href="clases.html">CrossFit</a></li>
+                                    </ul>
+                                </li>
+                                <li class="mega-menu-column">
+                                    <h6 class="mega-menu-title">Otras</h6>
+                                    <ul class="mega-menu-list">
+                                        <li><a href="clases.html">Yoga</a></li>
+                                        <li><a href="clases.html">Spinning</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="entrenadores.html">Entrenadores</a></li>
+                        <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SECCIÓN PLANES -->
+    <section class="seccion-planes">
+        <div class="container">
+            <!-- Toggle Mensual/Anual -->
+            <div class="toggle-wrapper text-center mb-4">
+                <input type="radio" name="plan" id="mensual" checked>
+                <label for="mensual" class="btn btn-warning">Mensual</label>
+    
+                <input type="radio" name="plan" id="anual">
+                <label for="anual" class="btn btn-warning">Anual</label>
+            </div>
+    
+            <!-- Tabla de Precios -->
+            <table class="table table-hover text-center text-light">
+                <thead>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Precio</th>
+                        <th>Beneficios</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Plan Básico</td>
+                        <td>
+                            <span class="precio mensual">$18.000</span>
+                            <span class="precio anual" style="display: none;">$180.000</span>
+                        </td>
+                        <td>
+                            Acceso gimnasio 
+                            <span class="tooltip-icon" data-bs-toggle="tooltip" title="Acceso ilimitado al gimnasio">ⓘ</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Plan Full</td>
+                        <td>
+                            <span class="precio mensual">$28.000</span>
+                            <span class="precio anual" style="display: none;">$280.000</span>
+                        </td>
+                        <td>
+                            Acceso completo 
+                            <span class="tooltip-icon" data-bs-toggle="tooltip" title="Incluye zona de pesas, cardio y más">ⓘ</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Plan Premium</td>
+                        <td>
+                            <span class="precio mensual">$35.000</span>
+                            <span class="precio anual" style="display: none;">$350.000</span>
+                        </td>
+                        <td>
+                            Todo incluido 
+                            <span class="tooltip-icon" data-bs-toggle="tooltip" title="Acceso total + nutrición + evaluación física">ⓘ</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer-content">
+            <form id="newsletter-form" class="newsletter">
+                <label for="newsletter-email">Suscribite al newsletter</label>
+                <input type="email" id="newsletter-email" placeholder="Tu correo">
+                <button type="submit">Suscribirse</button>
+            </form>
+            <div class="mapa">
+                <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-58.38,-34.61,-58.37,-34.60&layer=mapnik"
+                    width="100%" height="150" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            <div class="social-links">
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <p>&copy; 2025 Popepo GYM. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/megamenu.js"></script>
+    <script src="../js/scripts.js"></script>
+    <script src="../js/precios.js"></script>
+</body>
+</html>

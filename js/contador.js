@@ -1,21 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const contador = document.querySelector('.contador');
-    const target = +contador.getAttribute('data-target');
-    let cont = 0;
-    const velocidad = 80;
-  
-    const actualizarContador = () => {
-      const incremento = Math.ceil(target / 100);
-  
-      if (cont < target) {
-        cont += incremento;
-        if (cont > target) count = target;
-        contador.textContent = cont;
-        setTimeout(actualizarContador, velocidad);
-      } else {
-        contador.textContent = target;
-      }
-    };
-    actualizarContador();
-  });
-  
+  const contador = document.getElementById("contador");
+  const target = +contador.getAttribute("data-target"); // Convierte el valor a número
+  let count = 0;
+
+  const updateCounter = () => {
+    if (count < target) {
+      count += Math.ceil(target / 100); // Incremento gradual
+      contador.textContent = count;
+      setTimeout(updateCounter, 30); // Velocidad de la animación
+    } else {
+      contador.textContent = target;
+    }
+  };
+
+  updateCounter();
+});
