@@ -96,21 +96,21 @@
 .comment .avatar {
     width: 50px;
     height: 50px;
-    background-color: #ffc300; /* Fondo amarillo */
-    border-radius: 50%; /* Forma circular */
+    background-color: #ffc300;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
     font-size: 1.2rem;
-    color: #111; /* Texto negro */
+    color: #111;
     text-transform: uppercase;
     margin-right: 1rem;
     position: relative;
 }
 
 .comment .avatar::before {
-    content: attr(data-initials); /* Mostrar las iniciales desde el atributo */
+    content: attr(data-initials);
     position: absolute;
 }
 

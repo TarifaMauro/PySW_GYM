@@ -1,29 +1,29 @@
 /* Estilos para la tabla */
 .table {
-    background-color: #222; /* Fondo gris oscuro */
-    color: #FFD700; /* Texto amarillo */
+    background-color: #222;
+    color: #FFD700;
     border-collapse: separate;
     border-spacing: 0;
-    border: 2px solid #FFD700; /* Borde amarillo */
+    border: 2px solid #FFD700;
     border-radius: 10px;
     overflow: hidden;
 }
 
 .table th {
-    background-color: #333; /* Fondo gris más oscuro para el encabezado */
-    color: #FFD700; /* Texto amarillo */
+    background-color: #333;
+    color: #FFD700;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .table td {
-    background-color: #222; /* Fondo gris oscuro para las celdas */
-    color: #fff; /* Texto blanco */
+    background-color: #222;
+    color: #fff;
 }
 
 .table-hover tbody tr:hover {
-    background-color: #FFD700; /* Fondo amarillo al pasar el mouse */
-    color: #111; /* Texto negro */
+    background-color: #FFD700;
+    color: #111;
 }
 
 .table-hover tbody tr:hover td{
@@ -32,7 +32,7 @@
 }
 
 .tooltip-icon {
-    color: #FFD700; /* Ícono amarillo */
+    color: #FFD700;
     cursor: pointer;
     font-weight: bold;
     margin-left: 5px;

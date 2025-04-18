@@ -104,7 +104,7 @@ body {
 }
 
 .hero .overlay {
-  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  background: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 10px;
 }
@@ -137,7 +137,7 @@ body {
 .clases-destacadas {
   text-align: center;
   padding: 50px;
-  background-color:var(--color-terciario); /* Fondo gris */
+  background-color:var(--color-terciario);
 }
 
 .clases-destacadas h2 {
@@ -194,61 +194,61 @@ section h2 {
 
 /* --- CONTADOR --- */
 .contador-section {
-  background: linear-gradient(135deg, #111, #222); /* Fondo degradado */
-  color: var(--color-primario); /* Texto dorado */
+  background: linear-gradient(135deg, #111, #222);
+  color: var(--color-primario);
   text-align: center;
-  padding: 60px 20px; /* Espaciado interno */
-  border: 2px solid var(--color-primario); /* Borde dorado */
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+  padding: 60px 20px;
+  border: 2px solid var(--color-primario);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .contador-titulo {
   font-size: 2rem;
   margin-bottom: 20px;
   text-transform: uppercase;
-  text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.5); /* Sombra para destacar */
+  text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.5);
 }
 
 .contador-descripcion {
   font-size: 1.2rem;
   margin-bottom: 30px;
-  color: var(--color-terciario); /* Texto gris */
+  color: var(--color-terciario);
 }
 
 .contador-box {
   font-size: 3rem;
   font-weight: bold;
-  color: var(--color-primario); /* Texto dorado */
+  color: var(--color-primario);
   margin-bottom: 10px;
 }
 
 .contador-box p {
   font-size: 1.2rem;
-  color: var(--color-terciario); /* Texto gris */
+  color: var(--color-terciario);
 }
 
 /* --- TESTIMONIOS --- */
 .testimonios {
-  background-color: var(--color-terciario); /* Fondo oscuro */
-  color: var(--color-primario); /* Texto dorado */
-  padding: 60px 20px; /* Espaciado interno */
+  background-color: var(--color-terciario);
+  color: var(--color-primario);
+  padding: 60px 20px;
   text-align: center;
-  border: 2px solid var(--color-primario); /* Borde dorado */
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+  border: 2px solid var(--color-primario);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .testimonios h2 {
   font-size: 2rem;
   margin-bottom: 30px;
-  color: var(--color-primario); /* Título dorado */
-  text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8); /* Sombra para destacar */
+  color: var(--color-primario);
+  text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
 }
 
 .carousel-inner p {
   font-size: 1.2rem;
-  color: var(--color-primario); /* Texto dorado */
+  color: var(--color-primario);
   margin-bottom: 10px;
 }
 

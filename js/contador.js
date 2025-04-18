@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
       contador.textContent = count;
       setTimeout(updateCounter, 30); // Velocidad de la animación
     } else {
-      contador.textContent = target; // Asegura que llegue al valor final
+      contador.textContent = target;
     }
   };
 
